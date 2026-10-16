@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #1100ff;
+        }
+
+        header {
+            background-color: #222;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 0;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #ff4757;
+        }
+
+        body {
+            background-color: wheat;
+            /* Patrón de cuadrícula con líneas multicolores */
+            background-image: 
+                linear-gradient(to right, #ff4757 1px, #ff9f43 1px, #feca57 1px, #1dd1a1 1px, #54a0ff 1px, #5f27cd 1px, #ff4757 1px, transparent 1px),
+                linear-gradient(to bottom, #ff4757 1px, #ff9f43 1px, #feca57 1px, #1dd1a1 1px, #54a0ff 1px, #5f27cd 1px, #ff4757 1px, transparent 1px);
+            background-size: 25px 25px; /* Tamaño de cada cuadrito */
+            margin-top: 90px;
+        }
+        
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 350px);
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .cuarteto, .kpop, .regueton, .dios {
+            border: 2px solid black;
+            width: 350px;
+            height: auto;
+            padding: 15px;
+            background-color: white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cuarteto img, .kpop img, .regueton img, .dios img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        input[type="button"] {
+            background-color: #333;     
+            color: white;                 
+            border: none;                    
+            padding: 8px 15px;             
+            border-radius: 5px;             
+            cursor: pointer;                
+            font-size: 14px;                
+            margin: 5px 2px;                
+            transition: background-color 0.3s ease;
+        }
+        /* --- ESTILOS MEJORADOS PARA EL FOOTER --- */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+footer h3:hover {
+    color: #ff4757;
+}
+    </style>
+</head>
+<body>
+    <h1>You tube music</h1>
+    <header> 
+        <a href="#regueton">Regueton</a>
+        <a href="#dios">Dios</a>
+        <a href="#k-pop">K-pop</a>
+        <a href="#cuarteto">Cuarteto</a>
+    </header>
+    <main>
+        <div class="cuarteto" id="cuarteto">
+            <h2>Cuarteto</h2>
+            <a href="https://youtu.be/yxYnDrWYrH8" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaUqTfsbEDjYjFPv6qXAT0TY_VU_U__IE7Agjtd7r7tA&s=10" alt="">
+            </a> 
+            <p>sabroso fuego, haz click en la imagen para escuchar la cancion</p>
+            <input type="button" value="Ver info">
+            <input type="button" value="Comprar entrada">
+        </div>
+        
+        <div class="kpop" id="k-pop">
+            <h2>K-Pop</h2>
+            <a href="https://youtu.be/WCpvHg3mRLg" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGHck--OZg4eqRegnXpWnTAbTSqGUQy-WybjCe-DwxzA&s=10" alt="">
+            </a>
+            <p>jk, haz click en la imagen para escuchar sobre el</p>
+            <input type="button" value="Ver info">
+            <input type="button" value="Comprar entrada">
+        </div>
+        
+        <div class="regueton" id="regueton">
+            <h2>Regueton</h2>
+            <a href="https://www.youtube.com/watch?v=DiItGE3eAyQ" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA-NNsa1wICNfIJ-NPAgsNIde461bsAIMRXrTduWzMXg&s=10" alt="">
+            </a>
+            <p>daddy yankee, haz click en la imagen para escuchar la cancion</p>
+            <input type="button" value="Ver info">
+            <input type="button" value="Comprar entrada">
+        </div>
+        
+        <div class="dios" id="dios">
+            <h2>Dios</h2>
+            <a href="https://www.youtube.com/watch?v=bhPdS_ZUKg8" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzM4qSaCHIK20Vkybna84iFEdbBbIMwLdM-PFfR5TbBQ&s=10" alt="">
+            </a> 
+            <p>sabras un poco de Él, haz click en la imagen para escuchar la cancion</p>
+            <input type="button" value="Ver info">
+            <input type="button" value="Comprar entrada">
+        </div>
+    </main>
+    <footer>
+        <h3>pagina web realizada por sada,vidal y carey. </h3>
+    </footer>
+</body>
+</html>
